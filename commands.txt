@@ -27,3 +27,9 @@ git push
 gh pr create --repo danilofreire/datasci350-quiz01-nathaniel --head Nathaniel567:main --title "Quiz 01 updates" --body ""
 git add commands.txt
 git commit -m "Add pull request command to commands.txt"
+git rebase -i HEAD~2
+# In the editor I kept the first commit as "pick" and changed the second to "squash"
+# I then added a neew commit message which was "Perform an interactive rebase to squash the last two commits into a single commit"
+git add commands.txt
+git commit -m "Update commands.txt with bonus task commands"
+git push --force
